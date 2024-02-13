@@ -1,5 +1,86 @@
-$bgColor: blue;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Avenir, sans-serif;
+    list-style: none;
+}
+
+@font-face {
+    font-family: Avenir;;
+    src: url(../../assets/fonts/Avenir-Regular.woff2);
+}
+
+@font-face {
+    font-family: Avenir;
+    src: url(../../assets/fonts/Avenir-Bold.woff2);
+    font-weight: 700;
+}
+
+
 
 body {
-    background-color: $bgColor;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+
+  section {
+    padding: 40px;
+    text-align: center;
+
+    p {
+        margin-bottom: 16px;
+    }
+  }
+
+  .movie-poster {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+
+  .cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #e44d26;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #333;
+    }
+  }
+
+  .features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+
+  .feature {
+    text-align: center;
+    max-width: 300px;
+    margin: 20px;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+  }
